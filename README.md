@@ -1,0 +1,3 @@
+# jcoin
+
+Blockchain research project
