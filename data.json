@@ -2,170 +2,99 @@
   "chain": [
     {
       "index": 0,
-      "timestamp": "2017-12-29T21:18:04.288Z",
+      "timestamp": "2017-12-29T21:41:33.238Z",
       "data": "Genesis block!",
       "previousHash": "**00/00**",
-      "hash": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
+      "hash": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
       "nonce": 0
     },
     {
       "index": 1,
-      "timestamp": "2017-12-29T21:18:04.300Z",
+      "timestamp": "2017-12-29T21:41:33.247Z",
       "data": [
         {
           "fromWallet": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
           "toWallet": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
           "transferCoins": [
-            "4d9a87829904e8fc689c4db86af8722d77c9ae40ba5e076f9d07a217fdac11b4"
+            "d46089b97fa07f66036dc3af46e18a61364aa8ec3994c70c109300eed5e8503a"
           ]
         },
         {
           "fromWallet": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
           "toWallet": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
           "transferCoins": [
-            "31a5b4b9f4e7e79b2ad25d376f5770deaf1fffacbbda014d273ac7e917f44d8e",
-            "38dc26a977d1f8583468870c4f9b242a904c16b670868fbb79040dc235fb1e1c"
+            "d95afe2505a17374a82691ea58c9e44c326dd2dbd63293bb3460a41360fe4438",
+            "b318b2e4f39e22629b79427a2bcd239a75d01bac5498399472193ac9cbcc69db"
           ]
         },
         {
           "fromWallet": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
           "toWallet": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
           "transferCoins": [
-            "2ca52bde229061cdb85316abfd7f3dd29b1fa3e992f6fe1e11fc3775125fdac0"
+            "2ba408888261d1e3fd901805918941f0da67f6266fbb53d9bc82c088be2ce7b7"
           ]
         }
       ],
-      "previousHash": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "00000baa4a290317dff639663b7c939d88e382b8bbfc5aa139658072c980629b",
-      "nonce": 73541
+      "previousHash": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "0008560ff73d5ee3264edbd4c4f6724fb70fc0e1f8870c445ad7f65239c14a0e",
+      "nonce": 3195
     },
     {
       "index": 2,
-      "timestamp": "2017-12-29T21:18:06.009Z",
+      "timestamp": "2017-12-29T21:41:33.375Z",
       "data": [
         {
           "fromWallet": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
           "toWallet": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
           "transferCoins": [
-            "b7ef0689427240aa25544bd5dbf192fe232f0c610bd32b237d0c1dec500f3d57"
+            "5e92192db0c784b2a224c829020bd156927cbf5ad00b24e48aa954f2f4ed5852"
           ]
         },
         {
           "fromWallet": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
           "toWallet": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
           "transferCoins": [
-            "16a335a750f79c1ec889670a478b2809d631c3e1622cba359f214499d3b32cd3"
+            "4bb259f10602822190d4758d84d1ad7eb501da9336d172f91c09ededf932d500",
+            "034e54744c0c22095a1405a92ea788918211db57743ac54d46442535f8fa0766",
+            "1efc34491bf4003bbe988a1bcfd7582fe1bc0db5a029577387bd80e32a7428b1"
           ]
         },
         {
           "fromWallet": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
           "toWallet": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
           "transferCoins": [
-            "a801f78f470d6fbea0c5c66f8f8a646ce6b2e96e700735fd84d7b758e47f7824"
+            "79ce1a955383ec7d81561948a3802f847b5ae50e4d53643686b4f28f4eb9b8dd"
           ]
         }
       ],
-      "previousHash": "00000baa4a290317dff639663b7c939d88e382b8bbfc5aa139658072c980629b",
-      "hash": "000006d53881db3de60d2de70caa503e2905a74572b26b1f8442b177e4fbe3fd",
-      "nonce": 3314586
+      "previousHash": "0008560ff73d5ee3264edbd4c4f6724fb70fc0e1f8870c445ad7f65239c14a0e",
+      "hash": "000e56611212c645f6ded031a5f495385f4168f670d164515d72db01089a9317",
+      "nonce": 1911
     }
   ],
   "wallets": {
     "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad": {
       "publicAddress": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
       "privateKey": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
-      "createdTimestamp": "2017-12-29T21:18:04.290Z",
+      "createdTimestamp": "2017-12-29T21:41:33.239Z",
       "ownedCoins": [
-        {
-          "previousCoinHash": "2ca52bde229061cdb85316abfd7f3dd29b1fa3e992f6fe1e11fc3775125fdac0",
-          "createdTimestamp": "2017-12-29T21:18:04.292Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "653c740ea4ec93645b8fe84d7d81692422b226dd67ed53ee43173b7107ead963",
-          "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
-          "owner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
-          "avaliable": true
-        },
-        {
-          "previousCoinHash": "653c740ea4ec93645b8fe84d7d81692422b226dd67ed53ee43173b7107ead963",
-          "createdTimestamp": "2017-12-29T21:18:04.292Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "b7ef0689427240aa25544bd5dbf192fe232f0c610bd32b237d0c1dec500f3d57",
-          "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-          "avaliable": true
-        },
-        {
-          "previousCoinHash": "b7ef0689427240aa25544bd5dbf192fe232f0c610bd32b237d0c1dec500f3d57",
-          "createdTimestamp": "2017-12-29T21:18:04.293Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "16a335a750f79c1ec889670a478b2809d631c3e1622cba359f214499d3b32cd3",
-          "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-          "avaliable": true
-        },
-        {
-          "previousCoinHash": "16a335a750f79c1ec889670a478b2809d631c3e1622cba359f214499d3b32cd3",
-          "createdTimestamp": "2017-12-29T21:18:04.295Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "a801f78f470d6fbea0c5c66f8f8a646ce6b2e96e700735fd84d7b758e47f7824",
-          "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-          "avaliable": true
-        }
+        "3053412e5d8906cdb1cbd05d279b2fa9603493059b3148f8b228ea8e4718caf6",
+        "5e92192db0c784b2a224c829020bd156927cbf5ad00b24e48aa954f2f4ed5852",
+        "4bb259f10602822190d4758d84d1ad7eb501da9336d172f91c09ededf932d500",
+        "034e54744c0c22095a1405a92ea788918211db57743ac54d46442535f8fa0766",
+        "1efc34491bf4003bbe988a1bcfd7582fe1bc0db5a029577387bd80e32a7428b1",
+        "79ce1a955383ec7d81561948a3802f847b5ae50e4d53643686b4f28f4eb9b8dd"
       ]
     },
     "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34": {
       "publicAddress": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
       "privateKey": "b3a8e0e1f9ab1bfe3a36f231f676f78bb30a519d2b21e6c530c0eee8ebb4a5d0",
-      "createdTimestamp": "2017-12-29T21:18:04.292Z",
+      "createdTimestamp": "2017-12-29T21:41:33.240Z",
       "ownedCoins": [
-        {
-          "previousCoinHash": "a801f78f470d6fbea0c5c66f8f8a646ce6b2e96e700735fd84d7b758e47f7824",
-          "createdTimestamp": "2017-12-29T21:18:04.295Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "b0c909ea55c27088dbbf02df89116c4495ce47f79e59548359b93559f4faf11a",
-          "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-          "owner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-          "avaliable": false
-        },
-        {
-          "previousCoinHash": "b0c909ea55c27088dbbf02df89116c4495ce47f79e59548359b93559f4faf11a",
-          "createdTimestamp": "2017-12-29T21:18:04.296Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "94f4bbcd4ef873a243dcca9d84b2058ec7006ec4eb7f54dcc987efb296f7b107",
-          "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-          "owner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-          "avaliable": true
-        },
-        {
-          "previousCoinHash": "4ba4e2af026bff6b576a24a90e8868f49febee81741fdb7b7fde811d66da55c6",
-          "createdTimestamp": "2017-12-29T21:18:04.291Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "4d9a87829904e8fc689c4db86af8722d77c9ae40ba5e076f9d07a217fdac11b4",
-          "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
-          "avaliable": true
-        },
-        {
-          "previousCoinHash": "4d9a87829904e8fc689c4db86af8722d77c9ae40ba5e076f9d07a217fdac11b4",
-          "createdTimestamp": "2017-12-29T21:18:04.291Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "31a5b4b9f4e7e79b2ad25d376f5770deaf1fffacbbda014d273ac7e917f44d8e",
-          "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
-          "avaliable": true
-        },
-        {
-          "previousCoinHash": "31a5b4b9f4e7e79b2ad25d376f5770deaf1fffacbbda014d273ac7e917f44d8e",
-          "createdTimestamp": "2017-12-29T21:18:04.291Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "38dc26a977d1f8583468870c4f9b242a904c16b670868fbb79040dc235fb1e1c",
-          "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
-          "avaliable": true
-        },
-        {
-          "previousCoinHash": "38dc26a977d1f8583468870c4f9b242a904c16b670868fbb79040dc235fb1e1c",
-          "createdTimestamp": "2017-12-29T21:18:04.291Z",
-          "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-          "hash": "2ca52bde229061cdb85316abfd7f3dd29b1fa3e992f6fe1e11fc3775125fdac0",
-          "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
-          "avaliable": true
-        }
+        "d46089b97fa07f66036dc3af46e18a61364aa8ec3994c70c109300eed5e8503a",
+        "d95afe2505a17374a82691ea58c9e44c326dd2dbd63293bb3460a41360fe4438",
+        "b318b2e4f39e22629b79427a2bcd239a75d01bac5498399472193ac9cbcc69db",
+        "2ba408888261d1e3fd901805918941f0da67f6266fbb53d9bc82c088be2ce7b7"
       ]
     }
   },
@@ -174,102 +103,109 @@
       "fromWallet": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
       "toWallet": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
       "transferCoins": [
-        "b0c909ea55c27088dbbf02df89116c4495ce47f79e59548359b93559f4faf11a"
+        "d46089b97fa07f66036dc3af46e18a61364aa8ec3994c70c109300eed5e8503a"
       ]
     }
   ],
   "circulation": [
     {
       "previousCoinHash": "Gensis Coin!",
-      "createdTimestamp": "2017-12-29T21:18:04.290Z",
+      "createdTimestamp": "2017-12-29T21:41:33.239Z",
       "createdOnBlock": "**00/00**",
-      "hash": "4ba4e2af026bff6b576a24a90e8868f49febee81741fdb7b7fde811d66da55c6",
+      "hash": "c0a9cf50591f46221eecda7fb0893f98371fe2448501ced47ab90ae4dad887cb",
       "owner": "Genesis Coin",
       "avaliable": true
     },
     {
-      "previousCoinHash": "4ba4e2af026bff6b576a24a90e8868f49febee81741fdb7b7fde811d66da55c6",
-      "createdTimestamp": "2017-12-29T21:18:04.291Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "4d9a87829904e8fc689c4db86af8722d77c9ae40ba5e076f9d07a217fdac11b4",
+      "previousCoinHash": "c0a9cf50591f46221eecda7fb0893f98371fe2448501ced47ab90ae4dad887cb",
+      "createdTimestamp": "2017-12-29T21:41:33.240Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "d46089b97fa07f66036dc3af46e18a61364aa8ec3994c70c109300eed5e8503a",
       "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+      "owner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
+      "avaliable": false
+    },
+    {
+      "previousCoinHash": "d46089b97fa07f66036dc3af46e18a61364aa8ec3994c70c109300eed5e8503a",
+      "createdTimestamp": "2017-12-29T21:41:33.240Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "d95afe2505a17374a82691ea58c9e44c326dd2dbd63293bb3460a41360fe4438",
+      "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+      "owner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
       "avaliable": true
     },
     {
-      "previousCoinHash": "4d9a87829904e8fc689c4db86af8722d77c9ae40ba5e076f9d07a217fdac11b4",
-      "createdTimestamp": "2017-12-29T21:18:04.291Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "31a5b4b9f4e7e79b2ad25d376f5770deaf1fffacbbda014d273ac7e917f44d8e",
+      "previousCoinHash": "d95afe2505a17374a82691ea58c9e44c326dd2dbd63293bb3460a41360fe4438",
+      "createdTimestamp": "2017-12-29T21:41:33.240Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "b318b2e4f39e22629b79427a2bcd239a75d01bac5498399472193ac9cbcc69db",
       "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+      "owner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
       "avaliable": true
     },
     {
-      "previousCoinHash": "31a5b4b9f4e7e79b2ad25d376f5770deaf1fffacbbda014d273ac7e917f44d8e",
-      "createdTimestamp": "2017-12-29T21:18:04.291Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "38dc26a977d1f8583468870c4f9b242a904c16b670868fbb79040dc235fb1e1c",
+      "previousCoinHash": "b318b2e4f39e22629b79427a2bcd239a75d01bac5498399472193ac9cbcc69db",
+      "createdTimestamp": "2017-12-29T21:41:33.240Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "2ba408888261d1e3fd901805918941f0da67f6266fbb53d9bc82c088be2ce7b7",
       "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+      "owner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
       "avaliable": true
     },
     {
-      "previousCoinHash": "38dc26a977d1f8583468870c4f9b242a904c16b670868fbb79040dc235fb1e1c",
-      "createdTimestamp": "2017-12-29T21:18:04.291Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "2ca52bde229061cdb85316abfd7f3dd29b1fa3e992f6fe1e11fc3775125fdac0",
-      "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
-      "avaliable": true
-    },
-    {
-      "previousCoinHash": "2ca52bde229061cdb85316abfd7f3dd29b1fa3e992f6fe1e11fc3775125fdac0",
-      "createdTimestamp": "2017-12-29T21:18:04.292Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "653c740ea4ec93645b8fe84d7d81692422b226dd67ed53ee43173b7107ead963",
+      "previousCoinHash": "2ba408888261d1e3fd901805918941f0da67f6266fbb53d9bc82c088be2ce7b7",
+      "createdTimestamp": "2017-12-29T21:41:33.240Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "3053412e5d8906cdb1cbd05d279b2fa9603493059b3148f8b228ea8e4718caf6",
       "previousOwner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
       "owner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
       "avaliable": true
     },
     {
-      "previousCoinHash": "653c740ea4ec93645b8fe84d7d81692422b226dd67ed53ee43173b7107ead963",
-      "createdTimestamp": "2017-12-29T21:18:04.292Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "b7ef0689427240aa25544bd5dbf192fe232f0c610bd32b237d0c1dec500f3d57",
+      "previousCoinHash": "3053412e5d8906cdb1cbd05d279b2fa9603493059b3148f8b228ea8e4718caf6",
+      "createdTimestamp": "2017-12-29T21:41:33.240Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "5e92192db0c784b2a224c829020bd156927cbf5ad00b24e48aa954f2f4ed5852",
       "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
+      "owner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
       "avaliable": true
     },
     {
-      "previousCoinHash": "b7ef0689427240aa25544bd5dbf192fe232f0c610bd32b237d0c1dec500f3d57",
-      "createdTimestamp": "2017-12-29T21:18:04.293Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "16a335a750f79c1ec889670a478b2809d631c3e1622cba359f214499d3b32cd3",
+      "previousCoinHash": "5e92192db0c784b2a224c829020bd156927cbf5ad00b24e48aa954f2f4ed5852",
+      "createdTimestamp": "2017-12-29T21:41:33.243Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "4bb259f10602822190d4758d84d1ad7eb501da9336d172f91c09ededf932d500",
       "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
+      "owner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
       "avaliable": true
     },
     {
-      "previousCoinHash": "16a335a750f79c1ec889670a478b2809d631c3e1622cba359f214499d3b32cd3",
-      "createdTimestamp": "2017-12-29T21:18:04.295Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "a801f78f470d6fbea0c5c66f8f8a646ce6b2e96e700735fd84d7b758e47f7824",
+      "previousCoinHash": "4bb259f10602822190d4758d84d1ad7eb501da9336d172f91c09ededf932d500",
+      "createdTimestamp": "2017-12-29T21:41:33.243Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "034e54744c0c22095a1405a92ea788918211db57743ac54d46442535f8fa0766",
       "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
+      "owner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
       "avaliable": true
     },
     {
-      "previousCoinHash": "a801f78f470d6fbea0c5c66f8f8a646ce6b2e96e700735fd84d7b758e47f7824",
-      "createdTimestamp": "2017-12-29T21:18:04.295Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "b0c909ea55c27088dbbf02df89116c4495ce47f79e59548359b93559f4faf11a",
+      "previousCoinHash": "034e54744c0c22095a1405a92ea788918211db57743ac54d46442535f8fa0766",
+      "createdTimestamp": "2017-12-29T21:41:33.244Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "1efc34491bf4003bbe988a1bcfd7582fe1bc0db5a029577387bd80e32a7428b1",
       "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-      "owner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-      "avaliable": false
+      "owner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+      "avaliable": true
     },
     {
-      "previousCoinHash": "b0c909ea55c27088dbbf02df89116c4495ce47f79e59548359b93559f4faf11a",
-      "createdTimestamp": "2017-12-29T21:18:04.296Z",
-      "createdOnBlock": "9f28647ca6cfa1db7c37f3b129e7f6a722694cb90fd00c9eb15c8ca1fc7ba9e8",
-      "hash": "94f4bbcd4ef873a243dcca9d84b2058ec7006ec4eb7f54dcc987efb296f7b107",
+      "previousCoinHash": "1efc34491bf4003bbe988a1bcfd7582fe1bc0db5a029577387bd80e32a7428b1",
+      "createdTimestamp": "2017-12-29T21:41:33.244Z",
+      "createdOnBlock": "4fb76d75be00449a316b1f77de075fae2604d27d2aba4427dbe42c1c2fc6b15c",
+      "hash": "79ce1a955383ec7d81561948a3802f847b5ae50e4d53643686b4f28f4eb9b8dd",
       "previousOwner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
-      "owner": "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34",
+      "owner": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
       "avaliable": true
     }
   ],
-  "difficulty": 5
+  "difficulty": 3
 }
