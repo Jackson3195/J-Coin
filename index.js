@@ -1,7 +1,7 @@
 const SHA256 = require('crypto-js/sha256')
 const fs = require('fs')
 // --------------------------------------------------------------------------
-module.exports.Block = class Block {
+class Block {
   constructor (data = [], previousHash = undefined, index = undefined) {
     this.index = index
     this.timestamp = new Date()
