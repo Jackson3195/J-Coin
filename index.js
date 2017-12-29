@@ -1,7 +1,7 @@
 const SHA256 = require('crypto-js/sha256')
 const fs = require('fs')
 // --------------------------------------------------------------------------
-class Block {
+module.exports.Block = class Block {
   constructor (data = [], previousHash = undefined, index = undefined) {
     this.index = index
     this.timestamp = new Date()
@@ -97,7 +97,7 @@ class Blockchain {
     this.wallets = {}
     this.memoryPool = []
     this.circulation = [this.createGenesisCoin()]
-    this.difficulty = 5
+    this.difficulty = 3
   }
 
   createGenesisBlock () {
@@ -114,6 +114,13 @@ class Blockchain {
 
   getLatestCoin () {
     return this.circulation[this.circulation.length - 1]
+  }
+
+  getCoin (coinHash) {
+    let coinIndex = this.indexByAttr(this.circulation, 'hash', coinHash)
+    if (coinIndex !== -1) {
+      return this.circulation[coinIndex]
+    }
   }
 
   addBlock () {
@@ -147,7 +154,7 @@ class Blockchain {
       // Generate coins
       for (let i = 0; i < amount; i++) {
         let coin = this.createCoin(wallet.publicAddress, amount)
-        wallet.ownedCoins.push(coin)
+        wallet.ownedCoins.push(coin.hash)
       }
       return wallet
     }
@@ -163,21 +170,11 @@ class Blockchain {
   createTransaction (fromWallet, fromWalletPK, toWallet, amount) {
     let senderWallet = this.wallets[fromWallet]
     let recieverWallet = this.wallets[toWallet]
-    let memoryPoolIndex = 0
-    let relatedPendingTransactions = []
 
     if (senderWallet && recieverWallet) {
       // Check if enough enough non spent coin exists within the wallet
       let walletBalance = this.getWalletBalance(senderWallet.publicAddress)
       if (walletBalance >= amount) {
-        // Check if memory pool has any pending transaction from this wallet
-        while (memoryPoolIndex !== (this.memoryPool.length)) {
-          let transaction = this.memoryPool[memoryPoolIndex]
-          if (transaction.fromWallet === senderWallet.publicAddress) {
-            relatedPendingTransactions.push(transaction)
-          }
-          memoryPoolIndex++
-        }
         // Check if wallet is authorised to make payment
         let thisTransactionAuthHash = SHA256(fromWallet + fromWalletPK + senderWallet.createdTimestamp).toString()
         if (thisTransactionAuthHash === senderWallet.calculateAuthHash()) {
@@ -185,8 +182,9 @@ class Blockchain {
           let newTransaction = new Transaction(senderWallet.publicAddress, recieverWallet.publicAddress)
           // Add coins to the transaction for sending if avaliable
           let avaliableCoins = []
-          senderWallet.ownedCoins.forEach((coin) => {
+          senderWallet.ownedCoins.forEach((coinHash) => {
             // Get avaliable coins from the wallet
+            let coin = this.getCoin(coinHash)
             if (coin.avaliable) {
               avaliableCoins.push(coin)
             }
@@ -216,7 +214,8 @@ class Blockchain {
     let balance = 0
 
     if (targetWallet !== undefined) {
-      targetWallet.ownedCoins.forEach((coin) => {
+      targetWallet.ownedCoins.forEach((coinHash) => {
+        let coin = this.getCoin(coinHash)
         if (coin.avaliable) {
           balance = balance + 1
         }
@@ -233,16 +232,18 @@ class Blockchain {
       if (senderWallet.ownedCoins.length >= transaction.transferCoins.length) {
         for (let i = 0; i < transaction.transferCoins.length; i++) {
           // Get coin from owner and remove it from their wallet.
-          let ownerCoinIndex = this.indexByAttr(senderWallet.ownedCoins, 'hash', transaction.transferCoins[i])
-          if (ownerCoinIndex !== -1) {
-            coin = senderWallet.ownedCoins[ownerCoinIndex]
+          let ownerCoinIndex = senderWallet.ownedCoins.indexOf(transaction.transferCoins[i])
+          if (ownerCoinIndex !== -1 || ownerCoinIndex !== undefined) {
+            coin = this.getCoin(senderWallet.ownedCoins[ownerCoinIndex])
             senderWallet.ownedCoins.splice(ownerCoinIndex, 1)
+          } else {
+            console.log('OwnerCoinIndex not found', ownerCoinIndex)
           }
           // Check if coin not in reciept wallet, if not then add, update coin details and make it avaliable
           let newOwnerCoinIndex = this.indexByAttr(recieverWallet.ownedCoins, 'hash', transaction.transferCoins[i])
           if (!newOwnerCoinIndex) {
-            recieverWallet.ownedCoins.push(coin)
-            coin.setNewOwner(recieverWallet.hash)
+            recieverWallet.ownedCoins.push(coin.hash)
+            coin.setNewOwner(recieverWallet.publicAddress)
             coin.confirmed()
           }
         }
@@ -292,7 +293,7 @@ jCoin.addBlock()
 
 // Create some transactions
 jCoin.createTransaction(wallet2.publicAddress, wallet2.privateKey, wallet1.publicAddress, 1)
-jCoin.createTransaction(wallet2.publicAddress, wallet2.privateKey, wallet1.publicAddress, 1)
+jCoin.createTransaction(wallet2.publicAddress, wallet2.privateKey, wallet1.publicAddress, 3)
 jCoin.createTransaction(wallet2.publicAddress, wallet2.privateKey, wallet1.publicAddress, 1)
 // Add transactions to blockchain
 console.log('Mining block 2...')
