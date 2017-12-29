@@ -97,7 +97,7 @@ class Blockchain {
     this.wallets = {}
     this.memoryPool = []
     this.circulation = [this.createGenesisCoin()]
-    this.difficulty = 3
+    this.difficulty = 4
   }
 
   createGenesisBlock () {
@@ -121,6 +121,21 @@ class Blockchain {
     if (coinIndex !== -1) {
       return this.circulation[coinIndex]
     }
+  }
+
+  getWalletBalance (targetWalletID) {
+    let targetWallet = this.wallets[targetWalletID]
+    let balance = 0
+
+    if (targetWallet !== undefined) {
+      targetWallet.ownedCoins.forEach((coinHash) => {
+        let coin = this.getCoin(coinHash)
+        if (coin.avaliable) {
+          balance = balance + 1
+        }
+      })
+    }
+    return balance
   }
 
   addBlock () {
@@ -207,21 +222,6 @@ class Blockchain {
     } else {
       console.log('From or To wallets not found!')
     }
-  }
-
-  getWalletBalance (targetWalletID) {
-    let targetWallet = this.wallets[targetWalletID]
-    let balance = 0
-
-    if (targetWallet !== undefined) {
-      targetWallet.ownedCoins.forEach((coinHash) => {
-        let coin = this.getCoin(coinHash)
-        if (coin.avaliable) {
-          balance = balance + 1
-        }
-      })
-    }
-    return balance
   }
 
   confirmTransaction (transaction) {
